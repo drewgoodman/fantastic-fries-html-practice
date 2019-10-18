@@ -1,0 +1,135 @@
+/* Hero Style Section */
+
+.hero-section {
+    background-image: url(../images/backgrounds/fries-hero-bg.jpg);
+    padding: 100px;
+    height: 300px;
+    /* Parallex Image Feature Components */
+    background-attachment: fixed;
+    /* Image fixed - do not slide up and down */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Shrink and crop image to fit size of screen, maintains aspect ratio */
+
+}
+
+.hero-section > .top-heading {
+    background-color: #11122b;
+    color: #cbcbcb;
+    width: 290px;
+    border-radius: 2px;
+    padding: 1px 20px;
+}
+
+.hero-section > .bottom-heading {
+    background-color: #cea135;
+    color: #11122b;
+    padding: 1px 20px;
+    border-radius: 2px;
+    margin-top: 15px;
+    width: 107px;
+}
+
+/* Features Section Styles */
+
+.features-section {
+    height: 400px;
+    background-image: url(../images/backgrounds/fries-multiply-bg.jpg);
+    background-color: #cea135;
+    border-top: 10px solid white;
+    color: #11122b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu Condensed", sans-serif;
+    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+}
+
+.features-section > .columns-wrapper {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-section > .columns-wrapper > .column {
+    padding: 20px;
+    margin: 42px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    /* Border is necessary so that space is reserved; otherwise all the text moves when hovered over */
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.features-section > .columns-wrapper > .column:hover {
+    border-bottom: 5px solid #11122b;
+}
+
+.features-section > .columns-wrapper > .column :nth-child(1) {
+    font-size: 3em;
+}
+
+.features-section > .columns-wrapper > .column :nth-child(2) {
+    font-size: 1.5em;
+    font-weight: 900;
+    height: 50px;
+    transition: 1s;
+}
+
+.features-section > .columns-wrapper > .column :nth-child(2):hover {
+    letter-spacing: 1px;
+}
+
+
+.features-section > .columns-wrapper > .column :nth-child(3) {
+    letter-spacing: 3px;
+}
+
+/* Footer Section Styles */
+
+.footer-wrapper {
+    background-color: #11122b;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrapper > .footer-stack {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    width: 500px;
+    align-items: center;
+}
+
+.footer-wrapper > .footer-stack > .footer-image {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrapper > .footer-stack > .footer-image img {
+    width: 216px;
+    height: 100%;
+}
+
+.footer-wrapper > .footer-stack > .footer-info {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-wrapper > .footer-stack > .footer-info > .phone {
+    color: #cbcbcb;
+    padding: 0px 20px;
+    letter-spacing: 1px;
+}
+
+.footer-wrapper > .footer-stack > .footer-info > .hours {
+    color: #cea135;
+    padding: 0px 20px;
+    letter-spacing: 1px;
+    font-size: .8em;
+}
